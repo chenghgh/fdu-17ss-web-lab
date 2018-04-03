@@ -1,7 +1,8 @@
 body{font-family: Sans-Serif,Serif,"Times New Roman";
         padding-left: 5%;
         padding-right: 5%;
-        background: #E8EAF6}
+        background: #E8EAF6;
+        min-width: 600px}
 
 header{background: #1A237E}
 header{padding-top: 1em;
