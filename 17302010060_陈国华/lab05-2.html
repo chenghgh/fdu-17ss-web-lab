@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab05</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="container">
+    <nav class="collapse navbar-collapse navbar navbar-expand-md navbar-light row">
+        <div class="col-sm-auto text-center">
+            <h1>Share Your Travels</h1>
+            <p class="font-italic">Let us know where you've been</p >
+        </div>
+        <ul class="nav collapse navbar-collapse navbar-nav justify-content-end nav-fill col-md-6 offset-md-1">
+            <li class="nav-item"><a href="lab05-1.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Related Photos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="container border">
+    <div class="form">
+        <h2>Photo Details</h2>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" value="Give your photo a description name" id="title">
+        </div>
+        <div class="form-group">
+            <label for="comment">Description</label>
+            <textarea class="form-control" rows="7" id="comment">Adding a rich description will help search results</textarea>
+        </div>
+        <div class="form-group">
+            <label for="sel1">Continent</label>
+            <select class="form-control" id="sel1">
+                <option>continent</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="conti">Country</label>
+            <select class="form-control secondary" id="conti">
+                <option>Country</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <lable for="cit">City</lable>
+            <input type="text" class="form-control" id="cit">
+        </div>
+        <div class="form-group">
+            <label for="rad">Copyight</label>
+            <div class="radio" id="rad">
+                <label><input type="radio" name="optradio">ALL rights reserved</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Creative Commons</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="chec">Creative Commons Types</label>
+            <div class="form-check" id="chec">
+                <label class="form-check-label ">
+                    <input type="checkbox" class="form-check-input" value="">Attribution
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label form-check-input-inline">
+                    <input type="checkbox" class="form-check-input " value="">Noncommercial
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label form-check-input-inline">
+                    <input type="checkbox" class="form-check-input " value="">No Derivative Works
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ia"></label>
+            <div class="form-check" id="ia">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">I accept the software license
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="form-group col-5">
+            <label for="rate">Rate this photo</label>
+            <input type="number" class="form-control" id="rate">
+        </div>
+        <div class="form-group col-7">
+            <label for="col">Color Collection</label>
+            <input type="text" class="form-control" id="col">
+        </div> </div>
+        <div class="row">
+        <div class="form-group col-7">
+            <label for="date">Date Takes</label>
+            <input type="text" class="form-control" id="date">
+        </div>
+        <div class="form-group col-5">
+            <label for="time">Time Takes</label>
+            <input type="text" class="form-control" id="time">
+        </div>
+    </div>
+
+
+    </div>
+    <div class="btn-group">
+        <button type="submit" class="btn btn-secondary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Clear</button></div>
+</div>
+
+
+</body>
+</html>
