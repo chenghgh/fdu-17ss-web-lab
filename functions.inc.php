@@ -9,7 +9,32 @@ function generateLink($url, $label, $class) {
 
 
 function outputPostRow($number)  {
-    include("travel-data.inc.php");
+    include('travel-data.inc.php');
+    $postId = ${"postId".$number};
+    $thumb = ${"thumb".$number};
+    $userId = ${"userId".$number};
+    $title = ${"title".$number};
+    $userName = ${"userName".$number};
+    $date = ${"date".$number};
+    $excerpt = ${"excerpt".$number};
+    $reviewsNum = ${"reviewsNum".$number};
+    $reviewsRating = ${"reviewsRating".$number};
+    $imgSrc = "images/".$thumb;
+    $imgClass = '\"img-responsive\"';
+
+ echo'
+    <div class="row">
+    <div class="col-md-4">'.
+    "<img src = $imgSrc class = $imgClass>".
+    '</div>
+    <div class="col-md-8">
+     <h2> '.$title.'</h2>
+     <div class="details">Posted by '. generateLink("user.php?id=".$userId,$userName,"").'<span class="pull-right">'.$date.'</span>
+     <p class="ratings">'.constructRating($reviewsRating).$reviewsNum.'Reviews</p>
+     </div>
+     <p class="excerpt">'.$excerpt.'</p>
+     <p>'.generateLink("post.php?id=".$postId,"Read more","btn btn-primary btn-sm").'</p>
+     </div></div><hr/> ';
 }
 
 /*
