@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+select{
+    width: 300px;
+}
+button{
+    width: 300px;
+}
+form{
+    border: 0;
+}
+thead{
+    background: grey;
+    color: whitesmoke;
+}
+td{
+    padding: 0 0.5em;
+}
+
+#hold2{
+    display: block;
+}
+.grey{
+    background:lightgrey;
+}
+#holdTable{
+    display: inline-block;
+}
+
+
+
